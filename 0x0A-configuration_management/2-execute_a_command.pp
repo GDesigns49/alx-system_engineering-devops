@@ -1,6 +1,6 @@
 # kill process killmenow
 
 exec { 'pkil':
-command		=> 'pkill killlmenow',
-provider	=> 'shell',
+command => 'pkill killlmenow',
+provider => 'shell',
 }
