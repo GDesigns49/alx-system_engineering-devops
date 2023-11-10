@@ -14,7 +14,7 @@ echo "server {
     server_name _;
     
     location /redirect_me {
-        return 301 http://gloriamaaji.tech/;
+        return 301 http://graceeffiong.tech/;
     }
 
     error_page 404 /404.html;
