@@ -33,15 +33,15 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-#--graceeffiong.tech-params-begin--
-backend graceeffiong.tech-backend
+#--gloriamaaji.tech-params-begin--
+backend gloriamaaji.tech-backend
         balance roundrobin
         server 6717-web-01 3.238.181.140:80 check
         server 6717-web-02 3.236.65.72:80 check
-frontend graceeffiong.tech-frontend
+frontend gloriamaaji.tech-frontend
         bind *:80
-        bind *:443 ssl crt /etc/letsencrypt/live/www.graceeffiong.tech-0002/fullchain.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.gloriamaaji.tech-0002/fullchain.pem
         redirect scheme https if !{ ssl_fc }
         mode http
-        default_backend graceeffiong.tech-backend
-#--graceeffiong.tech-params-end--
+        default_backend gloriamaaji.tech-backend
+#--gloriamaaji.tech-params-end--
